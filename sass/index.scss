@@ -6,43 +6,43 @@ body{
 		width: 980px;
 		margin: 0 auto;
 		height: 100%;
-	.button{
-		text-align: center;
-		.button_a{
-			text-decoration: none;
-			margin-top: 15%;
-			margin-bottom: 15%;
-			width: 10%;
-			height: 10%;
-			cursor: pointer;
-			border: 1px solid #f40000;
-			background: #ffffff;
-			float: left;
-			margin-right: 15px;
+		.button{
+			text-align: center;
+			.button_a{
+				text-decoration: none;
+				margin-top: 15%;
+				margin-bottom: 15%;
+				width: 10%;
+				height: 10%;
+				cursor: pointer;
+				border: 1px solid #f40000;
+				background: #ffffff;
+				float: left;
+				margin-right: 15px;
+			}
+			.button_b{
+				text-decoration: none;
+				margin-top: 15%;
+				width: 10%;
+				height: 10%;
+				cursor: pointer;
+				background: #f40000;
+				border: 1px solid #ffffff;
+				float: left;
+			}
+			.is_show{
+				display: block;
+			}
+			&:after{
+				content: '';
+				clear: both;
+				display: table;
+			}
 		}
-		.button_b{
-			text-decoration: none;
-			margin-top: 15%;
-			width: 10%;
-			height: 10%;
-			cursor: pointer;
-			background: #f40000;
-			border: 1px solid #ffffff;
-			float: left;
-		}
-		.is_show{
+		
+		.active{
 			display: block;
 		}
-		&:after{
-			content: '';
-			clear: both;
-			display: table;
-		}
 	}
-	
-	.active{
-		display: block;
-	}
-}
 
 }
