@@ -9,26 +9,33 @@ body{
 		.button{
 			text-align: center;
 			.button_a{
-				text-decoration: none;
 				margin-top: 15%;
 				margin-bottom: 15%;
+				padding: 1% 0;
 				width: 10%;
-				height: 10%;
 				cursor: pointer;
 				border: 1px solid #f40000;
 				background: #ffffff;
 				float: left;
 				margin-right: 15px;
+				a{
+					text-decoration: none;
+					display: block;
+				}
 			}
 			.button_b{
 				text-decoration: none;
 				margin-top: 15%;
 				width: 10%;
-				height: 10%;
+				padding: 1% 0;
 				cursor: pointer;
 				background: #f40000;
 				border: 1px solid #ffffff;
 				float: left;
+				a{
+					text-decoration: none;
+					display: block;
+				}
 			}
 			.is_show{
 				display: block;
