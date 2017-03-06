@@ -1,0 +1,44 @@
+body{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	.wrapper{
+		width: 980px;
+		margin: 0 auto;
+	.button{
+		.button_a{
+			margin-top: 15%;
+			margin-bottom: 15%;
+			width: 10%;
+			height: 25px;
+			cursor: pointer;
+			border: 1px solid #f40000;
+			background: #ffffff;
+			float: left;
+			margin-right: 15px;
+		}
+		.button_b{
+			margin-top: 15%;
+			width: 10%;
+			height: 25px;
+			cursor: pointer;
+			background: #f40000;
+			border: 1px solid #ffffff;
+			float: left;
+		}
+		.is_show{
+			display: block;
+		}
+		&:after{
+			content: '';
+			clear: both;
+			display: table;
+		}
+	}
+	
+	.active{
+		display: block;
+	}
+}
+
+}
