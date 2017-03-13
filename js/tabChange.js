@@ -1,21 +1,20 @@
 $(function () {
 	var isAnimation =true;
 	
-	$('a[href^="#"]').click(function(){
-		if(isAnimation = true){
-			isAnimation = false;
+	$('a[href^="#"]').click(function(e){
+
 		var target = $(this.hash);
-		var tab = $(this).parent();
+		var tab = $(this).children();
 
 		tabColorChange(tab);
 		contentChange(target);
-	}
 	isAnimation = true;
+		e.preventDefault();
 
 	});
 
 	function tabColorChange(tab){
-		var tabs = $('.button p');
+		var tabs = $('.button');
 		tabs.removeClass('on');
 		tab.addClass('on');
 	}
