@@ -1,11 +1,16 @@
 $(function () {
-
+	var isAnimation =true;
+	
 	$('a[href^="#"]').click(function(){
+		if(isAnimation = true){
+			isAnimation = false;
 		var target = $(this.hash);
 		var tab = $(this).parent();
 
 		tabColorChange(tab);
 		contentChange(target);
+	}
+	isAnimation = true;
 
 	});
 
