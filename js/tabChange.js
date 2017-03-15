@@ -9,11 +9,9 @@ $(function () {
 		tabColorChange(tab);
 		contentChange(target);
 	isAnimation = true;
-<<<<<<< HEAD
-	
-=======
+
 		// e.preventDefault();
->>>>>>> develop
+
 
 	});
 
