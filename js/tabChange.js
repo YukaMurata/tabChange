@@ -1,7 +1,7 @@
 $(function () {
 	var isAnimation =true;
 	
-	$('a[href^="#"]').click(function(e){
+	$('a[href^="#"]').click(function(){
 
 		var target = $(this.hash);
 		var tab = $(this).children();
@@ -9,7 +9,7 @@ $(function () {
 		tabColorChange(tab);
 		contentChange(target);
 	isAnimation = true;
-		e.preventDefault();
+		// e.preventDefault();
 
 	});
 
