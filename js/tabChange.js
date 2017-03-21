@@ -1,15 +1,12 @@
 $(function () {
-	var isAnimation =true;
 	
 	$('a[href^="#"]').click(function(){
-
-		var target = $(this.hash);
+		var target = location.hash;
+		// var target = $(this.hash);
 		var tab = $(this).children();
 
 		tabColorChange(tab);
 		contentChange(target);
-	isAnimation = true;
-		// e.preventDefault();
 
 	});
 
