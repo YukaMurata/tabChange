@@ -3,7 +3,7 @@ $(function () {
 	$('a[href^="#"]').click(function(){
 
 		var target = $(this.hash);
-		var tab = $(this).parent();
+		var tab = $(this).children();
 		var newTab = target.attr("id");
 		var openTab = $('.content:visible').attr("id");
 
