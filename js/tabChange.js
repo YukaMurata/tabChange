@@ -1,12 +1,18 @@
 $(function () {
 	
 	$('a[href^="#"]').click(function(){
-		var target = location.hash;
-		// var target = $(this.hash);
-		var tab = $(this).children();
 
-		tabColorChange(tab);
-		contentChange(target);
+		var target = $(this.hash);
+		var tab = $(this).parent();
+		var newTab = target.attr("id");
+		var openTab = $('.content:visible').attr("id");
+
+		if(newTab == openTab){
+
+		}else{
+			tabColorChange(tab);
+			contentChange(target);	
+		}
 
 	});
 
