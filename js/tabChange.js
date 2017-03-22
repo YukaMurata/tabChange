@@ -7,9 +7,7 @@ $(function () {
 		var newTab = target.attr("id");
 		var openTab = $('.content:visible').attr("id");
 
-		if(newTab == openTab){
-
-		}else{
+		if(newTab !== openTab){
 			tabColorChange(tab);
 			contentChange(target);	
 		}
